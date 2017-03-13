@@ -1,5 +1,13 @@
 $(call inherit-product, device/samsung/gts210vewifi/full_gts210vewifi.mk)
 
+# Since N there are some troubles with keymaster. Prebuilt keymaster can cause
+# problems in some cases (i.e. TTLS EAP WiFi connections) and some other cases.
+# BUT building keymaster from source breaks encryption. So this is ONLY for those
+# people that need this.
+#
+# This should NEVER be in official weekly builds !!!.
+TARGET_USES_SOURCEBUILD_KEYMASTER := true
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/omni/config/common_tablet.mk)
 

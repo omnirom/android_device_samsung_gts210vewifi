@@ -4,7 +4,7 @@ $(call inherit-product, device/samsung/gts210vewifi/full_gts210vewifi.mk)
 $(call inherit-product, vendor/omni/config/common_tablet.mk)
 
 PRODUCT_NAME := omni_gts210vewifi
-PRODUCT_BRAND := samsung
+PRODUCT_BRAND := sam
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_DEVICE := gts210vewifi
 PRODUCT_MODEL := SM-T813
